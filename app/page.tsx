@@ -5,26 +5,26 @@ export default function Home() {
   return (
     <>
       <header className="text-blue-100">
-        <nav className="fixed w-full flex justify-around items-center bg-blue-950 pt-5 pb-5 shadow-md">
+        <nav className="fixed w-full flex flex-column flex-wrap gap-4 justify-around items-center bg-blue-950 pt-5 pb-5 shadow-md md:flex-row">
            <div className="flex items-center gap-1.5">
             <Image className="h-5 w-9 object-contain" src={TailwindLogo} alt="Tailwind"></Image>
             <h1 className="text-xl font-bold">tailwindcss</h1>
           </div> 
-          <ul className='flex gap-7'>
+          <ul className='flex gap-7 lg:gap-16'>
             <li><a href="#setup">Setup</a></li>
             <li><a href="#utility">Utility</a></li>
             <li><a href="#layout">Layout</a></li>
             <li><a href="#responsive">Responsive</a></li>
           </ul>
         </nav>
-        <section className="text-center text-blue-100 bg-blue-900 pt-24 pb-16">
+        <section className="text-center text-blue-100 bg-blue-900 pt-36 pb-16 md:pt-24">
           <h1 className="text-5xl font-bold mt-6 mb-6">Get Started with Tailwind</h1>
           <p>A utility-first CSS framework</p>
           <p>Style directly in your HTML/JSX</p>
         </section>
       </header>
 
-      <main className=" bg-blue-100 text-blue-950">
+      <main className=" bg-blue-100 text-blue-950 px-6 py-6 md:px-28 lg:px-60 lg:py-12">
         <section>
           <h2 id="setup" className="text-3xl">Setup</h2>
           <ol className="list-decimal pl-6">
@@ -84,7 +84,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-blue-900 text-blue-100 text-center pt-5 pb-5">
+      <footer className="bg-blue-900 text-blue-100 text-center pt-6 pb-6">
         Copyright &copy; {new Date().getFullYear()} Joshua Frell Te
       </footer>
     </>
